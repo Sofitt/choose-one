@@ -1,5 +1,7 @@
 # electron-vite-react
 
+Макет в фигме: https://www.figma.com/file/4DCsEzFOnOwIJjwPZDxwFL/feed-me-your-text?type=design&node-id=0%3A1&t=iTZgw9vGFxlBkoPA-1
+
 [![awesome-vite](https://awesome.re/mentioned-badge.svg)](https://github.com/vitejs/awesome-vite)
 ![GitHub stars](https://img.shields.io/github/stars/caoxiemeihao/vite-react-electron?color=fa6470)
 ![GitHub issues](https://img.shields.io/github/issues/caoxiemeihao/vite-react-electron?color=d8b22d)
