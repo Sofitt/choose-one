@@ -1,0 +1,68 @@
+.mo-face {
+  height: 50vh;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &.__hover {
+    & .pupil {
+      bottom: 50%;
+    }
+  }
+  &.__active {
+    & .pupil {
+      background-color: #363636;
+      height: 64%;
+      transform: translateX(-50%);
+      bottom: calc((100% - 64%) / 2);
+    }
+    & .mouth {
+      pointer-events: all;
+      border-radius: 15vh;
+    }
+  }
+  & .mouth {
+    pointer-events: none;
+    width: calc(100% - 40px);
+    min-height: 12.5%;
+    background-color: #101010;
+    border-radius: 1000px;
+    max-height: 31vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    box-sizing: content-box;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & p {
+      word-break: break-word;
+      padding-top: 18px;
+      padding-bottom: 18px;
+      margin: 0;
+    }
+  }
+  & .eye {
+    pointer-events: none;
+    position: relative;
+    width: 12.5%;
+    height: 50%;
+    background-color: #101010;
+    border-radius: 1000px;
+  }
+  & .pupil {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64%;
+    height: 20%;
+    background-color: #252525;
+    border-radius: 1000px;
+    transition: .3s ease;
+  }
+}

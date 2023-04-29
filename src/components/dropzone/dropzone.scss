@@ -1,0 +1,17 @@
+.dropzone {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  aspect-ratio: 1;
+  border: 2px dashed black;
+  &.highlight {
+    border-color: red;
+  }
+  &_input {
+    width: 100%;
+    aspect-ratio: 1;
+    opacity: 0;
+  }
+}
